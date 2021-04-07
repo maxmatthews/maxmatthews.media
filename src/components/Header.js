@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import maxVector from '../images/maxVector.svg';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 // import resume from '../assets/MatthewsMaxResume.pdf'
-import card from '../assets/MatthewsMaxCard.pdf';
 
 const Header = (props) => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -25,14 +25,14 @@ const Header = (props) => (
 		<nav>
 			<ul>
 				<li>
-					<a
+					<OutboundLink
 						className="headerLink"
 						href="https://www.youtube.com/c/MaxMatthews"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						YouTube
-					</a>
+					</OutboundLink>
 				</li>
 				<li>
 					<a className="headerLink" href="https://medium.maxmatthe.ws">
@@ -40,24 +40,24 @@ const Header = (props) => (
 					</a>
 				</li>
 				<li>
-					<a
+					<OutboundLink
 						className="headerLink"
 						href="https://podcast.maxmatthews.media"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						PodCast
-					</a>
+					</OutboundLink>
 				</li>
 				<li>
-					<a
+					<OutboundLink
 						className="headerLink"
 						href="https://maxmatthe.ws"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						Personal Site
-					</a>
+					</OutboundLink>
 				</li>
 			</ul>
 		</nav>
@@ -68,7 +68,7 @@ const Header = (props) => (
 						href="https://medium.maxmatthe.ws/launching-max-matthews-media-d0d970bc0770"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="icon2 fas fa-rocket"
+						className="icon2 fa fa-rocket"
 					>
 						<span className="label">Launch Post</span>
 					</a>

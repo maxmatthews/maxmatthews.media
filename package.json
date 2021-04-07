@@ -4,9 +4,10 @@
 	"version": "1.0.0",
 	"author": "Max Matthews",
 	"dependencies": {
+		"font-awesome": "^4.7.0",
 		"gatsby": "^2",
+		"gatsby-cli": "^3.2.0",
 		"gatsby-plugin-favicon": "^3.1.4",
-		"gatsby-plugin-google-analytics": "^2.0.21",
 		"gatsby-plugin-google-gtag": "^3.2.0",
 		"gatsby-plugin-manifest": "^2.2.5",
 		"gatsby-plugin-netlify": "^2.0.17",

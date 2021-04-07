@@ -1,4 +1,3 @@
-import card from '../assets/MatthewsMaxCard.pdf';
 import React, { Component } from 'react';
 
 export default class Contact extends Component {
@@ -6,11 +5,13 @@ export default class Contact extends Component {
 
 	encode(data) {
 		return Object.keys(data)
-			.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+			.map(
+				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+			)
 			.join('&');
 	}
 
-	handleSubmit = e => {
+	handleSubmit = (e) => {
 		e.preventDefault();
 		const form = e.target;
 		fetch('/', {
@@ -24,10 +25,10 @@ export default class Contact extends Component {
 			.then(() => {
 				this.setState({ formSubmitted: true });
 			})
-			.catch(error => alert(error));
+			.catch((error) => alert(error));
 	};
 
-	handleChange = e => {
+	handleChange = (e) => {
 		this.setState({ [e.target.name]: e.target.value });
 	};
 
@@ -131,16 +132,16 @@ export default class Contact extends Component {
 							<span className="label">GitHub</span>
 						</a>
 					</li>
-					<li>
-						<a
-							href={card}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="icon2 far fa-address-card"
-						>
-							<span className="label">Business Card</span>
-						</a>
-					</li>
+					{/*<li>*/}
+					{/*	<a*/}
+					{/*		href={card}*/}
+					{/*		target="_blank"*/}
+					{/*		rel="noopener noreferrer"*/}
+					{/*		className="icon2 far fa-address-card"*/}
+					{/*	>*/}
+					{/*		<span className="label">Business Card</span>*/}
+					{/*	</a>*/}
+					{/*</li>*/}
 				</ul>
 				{this.props.close}
 			</article>

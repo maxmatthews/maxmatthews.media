@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import 'rc-collapse/assets/index.css';
-import '@fortawesome/fontawesome-pro/css/all.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import '../assets/scss/main.scss';
 
 const Layout = ({ children, location }) => {
@@ -31,7 +31,7 @@ const Layout = ({ children, location }) => {
 					}
 				}
 			`}
-			render={data => (
+			render={(data) => (
 				<div>
 					<Helmet
 						title={data.site.siteMetadata.title}
