@@ -1,9 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Max Matthews',
+		title: 'Max Matthews Media',
 		author: 'Max Matthews',
-		description:
-			'Full Stack Javascript Developer, Hacker, Mentor & Entrepreneur.',
+		description: 'Youtube, Blog, & Podcast',
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -38,10 +37,11 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-plugin-google-analytics`,
+			resolve: `gatsby-plugin-google-gtag`,
 			options: {
-				trackingId: 'UA-81233331-1',
+				// You can add multiple tracking ids and a pageview event will be fired for all of them.
+				trackingIds: ['G-9BQ949WSZY'],
 			},
 		},
 	],
-}
+};

@@ -37,16 +37,9 @@ class IndexPage extends React.Component {
 			vars[key] = value;
 		});
 
-		if (vars.redirectFrom === '/resume') {
-			this.handleOpenArticle('resume');
-		}
-
-		if (
-			vars.redirectFrom &&
-			vars.redirectFrom.toLowerCase() === '/getonlineworkshop'
-		) {
-			this.handleOpenArticle('getOnlineWorkshop');
-		}
+		// if (vars.redirectFrom === '/resume') {
+		// 	this.handleOpenArticle('resume');
+		// }
 
 		this.setState({
 			style: (
