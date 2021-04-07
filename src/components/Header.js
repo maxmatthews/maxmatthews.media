@@ -35,7 +35,12 @@ const Header = (props) => (
 					</OutboundLink>
 				</li>
 				<li>
-					<a className="headerLink" href="https://medium.maxmatthe.ws">
+					<a
+						className="headerLink"
+						href="https://medium.maxmatthe.ws"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Blog
 					</a>
 				</li>
@@ -64,14 +69,14 @@ const Header = (props) => (
 		<div id="headerSocialIcons">
 			<ul className="icons">
 				<li>
-					<a
+					<OutboundLink
 						href="https://medium.maxmatthe.ws/launching-max-matthews-media-d0d970bc0770"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="icon2 fa fa-rocket"
 					>
 						<span className="label">Launch Post</span>
-					</a>
+					</OutboundLink>
 				</li>
 				{/*		<li>*/}
 				{/*			<a*/}
